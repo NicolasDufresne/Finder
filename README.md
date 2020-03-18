@@ -1,0 +1,2 @@
+# Finder
+Dashboard administration Finder
