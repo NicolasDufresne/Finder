@@ -1,3 +1,4 @@
+//CLEAR
 .clear:before, .clear:after {
   content: '';
   display: table;
@@ -9,4 +10,24 @@
 
 .clear {
   *zoom: 1;
+}
+
+//TEXT-ALIGN
+.text-align-center {
+  text-align: center;
+}
+
+//FONT-WEIGHT-LIGHTER
+.font-weight-lighter {
+  font-weight: lighter;
+}
+
+//BORDER-RADIUS
+.border-radius {
+  border-radius: 5px;
+}
+
+//UPPERCASE
+.uppercare {
+  text-transform: uppercase;
 }
