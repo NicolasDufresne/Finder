@@ -1,0 +1,71 @@
+.checkbox {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 11;
+
+  &:checked
+  ~ .navbar {
+    display: none;
+  }
+
+  &:checked
+  ~ .wrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.navbar {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-image: url("src/assets/img/dashboard.jpg");
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+
+  &__white-opacity {
+    background-color: $color-white;
+    height: 100%;
+    opacity: 90%;
+  }
+
+  &__title {
+    padding-top: 3rem;
+  }
+
+  &__hr {
+    border: 1px solid $color-grey-light-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  &__list {
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+
+    &__li {
+      padding: 10px 0 10px 0;
+      margin: 10px 0 10px 0;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $color-grey-light-1;
+      }
+    }
+
+    &__liens {
+      text-decoration: none;
+      color: $color-grey-dark;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}
